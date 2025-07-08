@@ -1,2 +1,47 @@
-# ton-portfolio-bot
-Telegram bot + TON Connect mini app for checking wallet balance, NFTs, scam status, and whale alerts. Built for the TON ecosystem using only Python and a mobile phone. Powered by TON API, Tonkeeper, and Telegram Web Apps.
+# TON Portfolio Bot 🧾
+
+Это Telegram-бот + mini-app, созданный для экосистемы TON. Он позволяет пользователям:
+
+- 🔗 Подключить свой кошелёк через TON Connect mini-app
+- 💰 Проверить баланс TON
+- 🎨 Просмотреть NFT-коллекции
+- 🛡️ Проверить адрес на скам
+- 🐋 Получать whale-алерты о крупных транзакциях
+
+---
+
+## 🚀 Возможности
+
+- Подключение Tonkeeper-кошелька через WebApp
+- Поддержка NFT и scam-чека через TonAPI
+- Отслеживание whale-транзакций
+- Минималистичный UI/UX, совместимый с Telegram
+
+---
+
+## 📂 Структура проекта
+ton-portfolio-bot/ ├── main.py               # Python-бот ├── mini-app/ │   ├── index.html        # HTML-интерфейс mini-app │   └── manifest.json     # Manifest для Telegram ├── requirements.txt      # Зависимости └── README.md             # Документация (вот этот файл)
+---
+
+## 🛠 Установка
+
+1. Установите библиотеки:
+pip install python-telegram-bot requests nest_asyncio
+2. В `main.py` укажите ваш `BOT_TOKEN` и `TONAPI_KEY`
+
+3. Запустите:
+python main.py
+---
+
+## 💸 Грантовая цель
+
+Проект подаётся на грант STON.fi как MVP Web3-инструмента, разработанного на телефоне без серверов.  
+Это пример low-cost разработки в экосистеме TON.
+
+---
+
+## 👨‍💻 Автор
+
+Создано разработчиком из Таджикистана 🇹🇯  
+Работа выполнена **только с помощью телефона**, Python и большого желания пробиться.  
+Проект открыт и готов к развитию. Поддержите идею!
