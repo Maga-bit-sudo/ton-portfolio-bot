@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TON Connect</title>
+    <script src="https://unpkg.com/@tonconnect/sdk@latest"></script>
+  </head>
+  <body>
+    <h2>Подключение TON-кошелька</h2>
+    <button id="connect">🔗 Подключить</button>
+
+    <script>
+      const tonConnect = new TON_CONNECT.TonConnect({
+        manifestUrl: 'https://ton-mini-app-1bw.pages.dev/manifest.json',
+      });
+
+      document.getElementById('connect').onclick = async () => {
+        const wallet = await tonConnect.connect();
+        if (wallet && wallet.account && wallet.account.address) {
+          Telegram.WebApp.sendData(wallet.account.address);
+        } else {
+          alert("Ошибка подключения");
+        }
+      };
+    </script>
+  </body>
+</html>
